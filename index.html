@@ -16,13 +16,13 @@ button{background:#29ff78;color:#000;font-weight:bold}
 <h1>🎯 HUB GAMES Calculator</h1>
 
 <div class="card">
-<label>Banca</label>
+<label>BANCA</label>
 <input id="banca" type="number" value="0">
 
-<label>Meta (%)</label>
+<label>META (%)</label>
 <input id="meta" type="number" value="0">
 
-<label>Quantidade (é a quantidade de vezes que a meta sera dividida)</label>
+<label>QUANTIDADE DE OPERAÇÕES (quantidade de vezes que a meta sera dividida)</label>
 <select id="ciclos">
 <option value="1">1 - Operação</option>
 <option value="2">2 - Operações</option>
@@ -31,7 +31,7 @@ button{background:#29ff78;color:#000;font-weight:bold}
 <option value="5">5 - Operações</option>
 </select>
 
-<label>Tipo</label>
+<label>TIPO</label>
 <select id="tipo">
 <option value="1">Player (1:1)</option>
 <option value="0.9">Banker (0,9:1)</option>
@@ -70,21 +70,21 @@ const lucroEmp2 = (empate2 * 8) - perda1;
 document.getElementById('saida').textContent =
 `💰 Banca: R$ ${banca.toFixed(2)}
 🎯 Meta Total: R$ ${metaTotal.toFixed(2)}
-📈 Meta por Ciclo: R$ ${metaCiclo.toFixed(2)}
+📈 Meta por Operação: R$ ${metaCiclo.toFixed(2)}
 
-ENTRADA 1
+ENTRADA 1 (SG)
 Lateral: R$ ${lateral1.toFixed(2)}
 Empate: R$ ${empate1.toFixed(2)}
 
-ENTRADA 2 (Recuperação)
+ENTRADA 2 (G1)
 Lateral: R$ ${lateral2.toFixed(2)}
 Empate: R$ ${empate2.toFixed(2)}
 
-SIMULAÇÕES
-🟢 Lateral 1ª: +R$ ${lucroLat1.toFixed(2)}
-🟢 Empate 1ª: +R$ ${lucroEmp1.toFixed(2)}
-🟢 Lateral 2ª: +R$ ${lucroLat2.toFixed(2)}
-🟢 Empate 2ª: +R$ ${lucroEmp2.toFixed(2)}
+RESULTADOS
+🟢 Lateral SG: +R$ ${lucroLat1.toFixed(2)}
+🟢 Empate SG: +R$ ${lucroEmp1.toFixed(2)}
+🟢 Lateral G2: +R$ ${lucroLat2.toFixed(2)}
+🟢 Empate G2: +R$ ${lucroEmp2.toFixed(2)}
 🔴 Loss Máximo: -R$ ${(perda1+lateral2+empate2).toFixed(2)}`;
 });
 </script>
